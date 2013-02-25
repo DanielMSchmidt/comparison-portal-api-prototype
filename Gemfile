@@ -72,3 +72,5 @@ end
 group :assets do
   gem "hogan_assets"
 end
+
+gem "pg", :group => "production"

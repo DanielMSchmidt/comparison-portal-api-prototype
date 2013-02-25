@@ -156,6 +156,7 @@ GEM
       sassy-math (>= 1.5)
     multi_json (1.6.1)
     nokogiri (1.5.6)
+    pg (0.14.1)
     polyglot (0.3.3)
     pry (0.9.12)
       coderay (~> 1.0.5)
@@ -283,6 +284,7 @@ DEPENDENCIES
   hpricot
   jquery-rails
   meta_request
+  pg
   puma
   rails (= 3.2.12)
   rspec-rails (~> 2.0)
