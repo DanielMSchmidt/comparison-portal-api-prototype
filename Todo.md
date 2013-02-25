@@ -1,5 +1,4 @@
-#TODO:
+Todo
+====
 
-Clear Gemfile 
-add to application js => '//= require hogan.js' 
-add to application js => '//= require_tree ./templates'
+- maybe use utf-8 for bücher.de

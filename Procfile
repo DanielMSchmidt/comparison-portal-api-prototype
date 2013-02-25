@@ -1,1 +1,1 @@
-web: rails s puma -p ENV['PORT']
+web: rails s puma
