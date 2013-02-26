@@ -4,6 +4,7 @@ gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+
 gem 'json'
 
 
@@ -55,8 +56,16 @@ group :development, :test do
   gem "guard-cucumber"
 end
 
-
+gem "simple_form"
 gem "foreman"
+gem "compass-rails", :group => :assets
+gem "zurb-foundation", :group => :assets
 gem "puma"
+gem "celluloid"
+gem "haml"
 
-gem "pg", :group => "production"
+group :development do
+  gem "haml-rails"
+  gem "hpricot"
+  gem "ruby_parser"
+end
