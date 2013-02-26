@@ -1,1 +1,1 @@
-web: rails s
+web: rails s puma -p $PORT
