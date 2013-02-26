@@ -73,7 +73,7 @@ class ApiController < ApplicationController
   end
 
   def put_providers
-    render json '', :accepted
+    render json: '', :accepted
   end
 
   def delete_providers
