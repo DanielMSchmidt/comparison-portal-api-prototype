@@ -1,1 +1,1 @@
-web: rails s puma
+web: rails s
