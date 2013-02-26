@@ -1,53 +1,22 @@
 ComparisonPortalApiPrototype::Application.routes.draw do
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
 
-  # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
-  # Keep in mind you can assign values other than :controller and :action
+  get '/users' => 'api#get_users'
+  post '/users' => 'api#post_users'
+  put '/users' => 'api#put_users'
+  delete '/users' => 'api#delete_users'
 
-  # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
-  # This route can be invoked with purchase_url(:id => product.id)
 
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  get '/carts' => 'api#get_carts'
+  post '/carts' => 'api#post_carts'
+  put '/carts' => 'api#put_carts'
+  delete '/carts' => 'api#delete_carts'
 
-  # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+  get '/providers' => 'api#get_providers'
+  post '/providers' => 'api#post_providers'
+  put '/providers' => 'api#put_providers'
+  delete '/providers' => 'api#delete_providers'
 
-  # Sample resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
 
-  # Sample resource route with more complex sub-resources
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', :on => :collection
-  #     end
-  #   end
-
-  # Sample resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
-
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
   root :to => 'api#root'
 
   # See how all your routes lay out with "rake routes"
