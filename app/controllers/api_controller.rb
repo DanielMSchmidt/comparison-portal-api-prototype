@@ -94,5 +94,4 @@ class ApiController < ApplicationController
       render json: {}, status: :no_content
     end
   end
-
 end
