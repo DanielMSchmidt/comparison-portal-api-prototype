@@ -8,7 +8,7 @@ class ApiController < ApplicationController
   respond_to :json
   def root
     requested_value = request.headers["isbn"] || request.headers["text"]
-    unless requested_value.nil?
+    unless (requested_value.nil?)
       render json: '{"id": 4,"type": "Disk","identifier": "978-3453146976", "price": [ {"provider": "ebay", "price": "12.5" }, {"provider": "buecher.de", "price": "13.7"}] }', status: :ok
     else
       render json: {}, status: :no_content
@@ -16,7 +16,7 @@ class ApiController < ApplicationController
   end
 
   def get_users
-    if @auth["username"] == "valid-user" && @auth["password"] == "valid-password"
+    if (@auth["username"] == "valid-user" && @auth["password"] == "valid-password")
       render json: {}, status: :accepted
     else
       render json: {}, status: :not_acceptable
@@ -24,7 +24,7 @@ class ApiController < ApplicationController
   end
 
   def post_users
-    unless params["username"].nil? || params["password"].nil?
+    unless (params["username"].nil? || params["password"].nil?)
       render json: {}, status: :created
     else
       render json: '{"errors": [{"username": "This username already exists"},{"password": "This password is too short"}]}', status: :not_acceptable
@@ -48,7 +48,7 @@ class ApiController < ApplicationController
   end
 
   def put_carts
-    unless params["item_id"].nil?
+    unless (params["item_id"].nil?)
       render json: {}, status: :accepted
     else
       render json: {}, status: :ok
@@ -56,8 +56,7 @@ class ApiController < ApplicationController
   end
 
   def delete_carts
-    logger.debug "test: #{params["id"].class}"
-    if params["id"].to_i == 37
+    if (params["id"].to_i == 37)
       render json: {}, status: :accepted
     else
       render json: {}, status: :not_found
@@ -69,15 +68,15 @@ class ApiController < ApplicationController
   end
 
   def post_providers
-    render json: '', status: :bad_request
+    render json: {}, status: :bad_request
   end
 
   def put_providers
-    render json: '', :accepted
+    render json: {}, :accepted
   end
 
   def delete_providers
-    render json: '', status: :bad_request
+    render json: {}, status: :bad_request
   end
 
   protected

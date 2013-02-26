@@ -6,7 +6,11 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'json'
-gem 'pg'
+
+group :production do
+  gem 'pg'
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -38,6 +42,7 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 group :development, :test do
+  gem "sqlite3"
   gem "bullet"
   gem "brakeman"
   gem "better_errors"
