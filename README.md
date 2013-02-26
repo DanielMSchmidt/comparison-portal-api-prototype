@@ -56,7 +56,7 @@ And you will get the item back like this:
     Send a GET-Request with header
 
         {
-          "auth":
+          "authentication":
           {
             "username": "valid-user",
             "password": "valid-password"
@@ -64,7 +64,7 @@ And you will get the item back like this:
         }
 
     and you will get a 202 status code. <br>
-    If you send an invalid user password combination you will get an 401 error code.
+    If you send an invalid user password combination or no authentication string you will get an 406 error code.
 
 
   - POST
@@ -97,7 +97,7 @@ And you will get the item back like this:
     Send a PUT-Request with the header <br>
 
         {
-          "auth":
+          "authentication":
           {
             "username": "valid-user",
             "password": "valid-password"
@@ -117,7 +117,7 @@ And you will get the item back like this:
     Send a DELETE-Request with the header
 
         {
-          "auth":
+          "authentication":
           {
             "username": "valid-user",
             "password": "valid-password"
@@ -135,7 +135,7 @@ And you will get the item back like this:
     Send a GET-Request with header
 
         {
-          "auth":
+          "authentication":
           {
             "username": "valid-user",
             "password": "valid-password"
@@ -144,89 +144,87 @@ And you will get the item back like this:
 
     and you will get a 200 status code, the body will look like this:
 
-        {
-          "carts": [
-            {
-              "id": 12,
-              "items": [
-                {
-                  "id": 4,
-                  "type": "Disk",
-                  "identifier": "978-3453146976",
-                  "price": [
-                    {
-                      "provider": "ebay",
-                      "price": 12.5
-                    },
-                    {
-                      "provider": "buecher.de",
-                      "price": 13.7
-                    }
-                  ]
-                },
-                {
-                  "id": 9,
-                  "type": "Book",
-                  "identifier": "978-3446237360",
-                  "price": [
-                    {
-                      "provider": "ebay",
-                      "price": 32.5
-                    }
-                  ]
-                }
-              ],
-              "total": [
-                {
-                  "ebay": 50
-                }
-              ]
-            },
-            {
-              "id": 42,
-              "items": [
-                {
-                  "id": 1,
-                  "type": "E-Book",
-                  "identifier": "978-3453446976",
-                  "price": [
-                    {
-                      "provider": "ebay",
-                      "price": 12.5
-                    },
-                    {
-                      "provider": "buecher.de",
-                      "price": 13.7
-                    }
-                  ]
-                },
-                {
-                  "id": 2,
-                  "type": "Book",
-                  "identifier": "978-3455237360",
-                  "price": [
-                    {
-                      "provider": "ebay",
-                      "price": 322.5
-                    } ,
-                    {
-                      "provider": "buecher.de",
-                      "price": 123.7
-                    }
-                  ]
-                }
-              ],
-              "total": [
-                {
-                  "ebay": 500
-                },
-                {
-                  "buecher.de": 600
-                }
-              ]
-            }
-          ]
-        }
+        [
+          {
+            "id": 12,
+            "items": [
+              {
+                "id": 4,
+                "type": "Disk",
+                "identifier": "978-3453146976",
+                "price": [
+                  {
+                    "provider": "ebay",
+                    "price": 12.5
+                  },
+                  {
+                    "provider": "buecher.de",
+                    "price": 13.7
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "type": "Book",
+                "identifier": "978-3446237360",
+                "price": [
+                  {
+                    "provider": "ebay",
+                    "price": 32.5
+                  }
+                ]
+              }
+            ],
+            "total": [
+              {
+                "ebay": 50
+              }
+            ]
+          },
+          {
+            "id": 42,
+            "items": [
+              {
+                "id": 1,
+                "type": "E-Book",
+                "identifier": "978-3453446976",
+                "price": [
+                  {
+                    "provider": "ebay",
+                    "price": 12.5
+                  },
+                  {
+                    "provider": "buecher.de",
+                    "price": 13.7
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "type": "Book",
+                "identifier": "978-3455237360",
+                "price": [
+                  {
+                    "provider": "ebay",
+                    "price": 322.5
+                  } ,
+                  {
+                    "provider": "buecher.de",
+                    "price": 123.7
+                  }
+                ]
+              }
+            ],
+            "total": [
+              {
+                "ebay": 500
+              },
+              {
+                "buecher.de": 600
+              }
+            ]
+          }
+        ]
 
     If you send an invalid user password combination you will get an 401 error code.
 
@@ -238,7 +236,7 @@ And you will get the item back like this:
     Send a POST-Request with header
 
         {
-          "auth":
+          "authentication":
           {
             "username": "valid-user",
             "password": "valid-password"
@@ -247,18 +245,18 @@ And you will get the item back like this:
 
     you will get a 201 status code if the cart is created and you will get the empty cart:
 
-    {
-      "id": 1337,
-      "items": [],
-      "total": []
-    }
+        {
+          "id": 1337,
+          "items": [],
+          "total": []
+        }
 
   - PUT
 
     Send a PUT-Request with the header <br>
 
         {
-          "auth":
+          "authentication":
           {
             "username": "valid-user",
             "password": "valid-password"
@@ -271,14 +269,14 @@ And you will get the item back like this:
           "item_id": 137
         }
 
-    you will get a 202 status code and the new cart and if the authentication goes wrong a 401 as always.
+    you will get a 202 status code and the new cart and if the authenticationentication goes wrong a 401 as always.
 
   - DELETE
 
     Send a DELETE-Request with the header
 
         {
-          "auth":
+          "authentication":
           {
             "username": "valid-user",
             "password": "valid-password"
@@ -297,7 +295,7 @@ And you will get the item back like this:
      Send a GET-Request with header
 
          {
-           "auth":
+           "authentication":
            {
              "username": "valid-user",
              "password": "valid-password"
@@ -326,7 +324,7 @@ And you will get the item back like this:
      Send a PUT-Request with the header
 
          {
-           "auth":
+           "authentication":
            {
              "username": "valid-user",
              "password": "valid-password"

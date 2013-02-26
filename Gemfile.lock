@@ -278,6 +278,7 @@ DEPENDENCIES
   haml-rails
   hpricot
   jquery-rails
+  json
   meta_request
   pg
   puma
