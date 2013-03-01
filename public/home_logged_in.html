@@ -39,19 +39,19 @@
     <div class="three columns">
       <div class="row">
         <div class="six column">
-          <a class="button expand" data-reveal-id="edit-user-modal" href="#">Profile</a>
+          <a class="button expand" data-reveal-id="edit-user-modal" href="#">Profil</a>
         </div>
         <div class="six column">
-          <a class="button expand" href="#">Logout</a>
+          <a class="button expand" href="#">Abmelden</a>
         </div>
       </div>
     </div>
     <div class="nine columns row collapse">
       <div class="ten mobile-three columns">
-        <input style="height: 39px;" type="text" placeholder="e.g. The Hitchhiker’s Guide to the Galaxy" />
+        <input style="height: 39px;" type="text" placeholder="z.B. The Hitchhiker’s Guide to the Galaxy" />
       </div>
       <div class="two mobile-one columns">
-        <a style="height: 39px;" class="button expand postfix">Find!</a>
+        <a style="height: 39px;" class="button expand postfix">Finden!</a>
       </div>
     </div>
   </div>
@@ -62,10 +62,14 @@
   <div class="row">
     <div class="nine columns push-three">
 
-      <h3>Volkers Crazy Comparisonportal</h3>
-      <h3><small>What is it all about?</small></h3>
+      <h3>Volkers Verrücktes Vergleichsportal</h3>
+      <h3><small>Worum geht es?</small></h3>
 
       <p>Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin. Venison tail chuck pork chop, andouille ball tip beef ribs flank boudin bacon. Salami andouille pork belly short ribs flank cow. Salami sirloin turkey kielbasa. Sausage venison pork loin leberkas chuck short loin, cow ham prosciutto pastrami jowl. Ham hock jerky tri-tip, fatback hamburger shoulder swine pancetta ground round. Tri-tip prosciutto meatball turkey, brisket spare ribs shankle chuck cow chicken ham hock boudin meatloaf jowl.</p>
+
+      <p>
+        <a href="#" data-reveal-id="rate-providers-modal" class="button">Bewerte unsere Zulieferer!</a>
+      </p>
 
       <p>Ground round pastrami pork loin tenderloin jerky. Jerky spare ribs biltong, ham hock ham capicola pork. Jerky turducken pork, meatloaf sausage capicola swine corned beef turkey short loin. Tongue prosciutto pork loin, ground round spare ribs venison kielbasa strip steak.</p>
 
@@ -82,7 +86,7 @@
       <p><a class="button expand" data-reveal-id="cart-modal" href="#" style="background-image: url(images/cart.png); background-repeat: no-repeat; height: 37.65625px; background-position: 84px 7px;"></a></p>
     </div>
     <div class="three columns pull-nine">
-      <p><img src="http://placehold.it/205x720&text=Ad" /></p>
+      <p><img src="http://placehold.it/205x720&text=Werbung" /></p>
     </div>
 
   </div>
@@ -143,14 +147,14 @@
   -->
 
   <div id="login-modal" class="reveal-modal small">
-    <h3>Connect</h3>
+    <h3>Externe Dienste</h3>
     <div class="row">
       <div class="ten columns centered">
-        <a href="#" class="button expand">Log in with Facebook</a>
+        <a href="#" class="button expand">Anmelden mit Facebook</a>
       </div>
     </div>
     <hr>
-    <h3>Login</h3>
+    <h3>Anmelden</h3>
     <div class="row">
       <div class="ten columns centered">
         <input type="text" placeholder="E-Mail" />
@@ -158,20 +162,20 @@
     </div>
     <div class="row">
       <div class="ten columns centered">
-        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Passwort" />
       </div>
     </div>
     <div class="row">
       <div class="five columns centered">
-        <a class="button expand" href="#">Login</a>
+        <a class="button expand" href="#">Anmelden</a>
       </div>
     </div>
     <hr>
     <div class="row">
       <div class="ten columns centered">
         <p style="text-align: centered;">
-          Need an account? <a href="#" data-reveal-id="register-modal">Sign up!</a> <br>
-          Forgot your password? <a href="#" data-reveal-id="forgot-password-modal">Click here!</a>
+          Du hast noch kein Konto? <a href="#" data-reveal-id="register-modal">Registrieren!</a> <br>
+          Du hast dein Passwort vergessen? <a href="#" data-reveal-id="forgot-password-modal">Klicke hier!</a>
         </p>
       </div>
     </div>
@@ -189,17 +193,17 @@
         </div>
         <div class="row">
           <div class="ten columns">
-            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Passwort" />
           </div>
         </div>
         <div class="row">
           <div class="ten columns">
-            <input type="password" placeholder="Confirm Password" />
+            <input type="password" placeholder="Passwort wiederholen" />
           </div>
         </div>
         <div class="row">
           <div class="ten columns">
-            <a class="button expand" href="#">Register</a>
+            <a class="button expand" href="#">Registrieren</a>
           </div>
         </div>
       </div>
@@ -211,21 +215,20 @@
   </div>
 
   <div id="forgot-password-modal" class="reveal-modal medium">
-    <h2>Recover Password</h2>
+    <h2>Passwort wiederherstellen</h2>
     <div class="row collapse">
       <div class="eight mobile-two columns">
-        <input style="height: 39px;" type="text" placeholder="Your E-Mailaddress" />
+        <input style="height: 39px;" type="text" placeholder="Deine E-Mailaddresse" />
       </div>
       <div class="four mobile-two columns">
-        <a style="height: 39px;" class="button expand postfix">Recover my password</a>
+        <a style="height: 39px;" class="button expand postfix">Setze mein Passwort zurück</a>
       </div>
     </div>
     <a class="close-reveal-modal">&#215;</a>
   </div>
 
-
   <div id="add-comment-modal" class="reveal-modal medium">
-    <h3>Write a Comment <br> <small>Per Anhalter durch die Galaxis</small></h3>
+    <h3>Schreib ein Kommentar <br> <small>Per Anhalter durch die Galaxis</small></h3>
     <div class="row">
       <div class="eleven colums">
         <textarea cols="30" rows="20"></textarea>
@@ -233,7 +236,7 @@
     </div>
     <div class="row">
       <div class="eleven colums">
-        <a class="button expand" href="#">Send</a>
+        <a class="button expand" href="#">Absenden</a>
       </div>
     </div>
     <a class="close-reveal-modal">&#215;</a>
@@ -271,13 +274,13 @@
     </ul>
     <div class="row">
       <div class="three columns">
-        <a id="yes-no" href="#" class="button expand">new Cart</a>
+        <a id="yes-no" href="#" class="button expand">Neuer Warenkorb</a>
       </div>
       <div class="three columns offset-by-one">
-        <a href="#" data-reveal-id="switch-cart-modal" class="button expand">Switch / Delete Carts</a>
+        <a href="#" data-reveal-id="switch-cart-modal" class="button expand">Ändere / Lösche Warenkorb</a>
       </div>
       <div class="three columns offset-by-one">
-        <a href="#" data-reveal-id="compare-cart-modal" class="button expand">Compare Providers</a>
+        <a href="#" data-reveal-id="compare-cart-modal" class="button expand">Vergleiche Zulieferer</a>
       </div>
       <div class="one columns"></div>
     </div>
@@ -286,24 +289,24 @@
   </div>
 
   <div id="switch-cart-modal" class="reveal-modal medium">
-    <h3>Your Carts</h3>
+    <h3>Deine Warenkörbe</h3>
      <ul class="accordion">
         <li class="active">
           <div class="title">
-            <h5>Cart 1</h5>
+            <h5>Warenkorb 1</h5>
           </div>
           <div class="content">
             <div class="row">
               <div class="six columns">
                 <ul>
-                  <li>Article 1</li>
-                  <li>Article 2</li>
-                  <li>Article 5</li>
+                  <li>Artikel 1</li>
+                  <li>Artikel 2</li>
+                  <li>Artikel 5</li>
                 </ul>
               </div>
               <div class="four columns">
-                <a href="#" class="button expand" style="margin-left: 50px; margin-bottom: 15px;">Take it</a>
-                <a href="#" class="button expand" style="margin-left: 50px;">Delete it</a>
+                <a href="#" class="button expand" style="margin-left: 50px; margin-bottom: 15px;">Auswählen</a>
+                <a href="#" class="button expand" style="margin-left: 50px;">Löschen</a>
               </div>
               <div class="two colums"></div>
             </div>
@@ -311,20 +314,20 @@
         </li>
         <li>
           <div class="title">
-            <h5>Cart </h5>
+            <h5>Warenkorb 2 </h5>
           </div>
           <div class="content">
             <div class="row">
               <div class="six columns">
                 <ul>
-                  <li>Article 4</li>
-                  <li>Article 9</li>
-                  <li>Article 5</li>
+                  <li>Artikel 4</li>
+                  <li>Artikel 9</li>
+                  <li>Artikel 5</li>
                 </ul>
               </div>
               <div class="four columns">
-                <a href="#" class="button expand" style="margin-left: 50px; margin-bottom: 15px;">Take it</a>
-                <a href="#" class="button expand" style="margin-left: 50px;">Delete it</a>
+                <a href="#" class="button expand" style="margin-left: 50px; margin-bottom: 15px;">Auswählen</a>
+                <a href="#" class="button expand" style="margin-left: 50px;">Löschen</a>
               </div>
               <div class="two colums"></div>
             </div>
@@ -335,14 +338,14 @@
   </div>
 
   <div id="compare-cart-modal" class="reveal-modal large">
-    <h3>Compare Carts</h3>
+    <h3>Anbietervergleich</h3>
     <div class="row">
       <div class="ten columns centered">
         <ul class="pricing-table">
           <li class="title">Buch.de</li>
           <li><img style="margin-left: 80px;" src="http://placehold.it/450x350"></li>
           <li class="price">99.98€</li>
-          <li class="cta-button"><a class="button" href="#">Take me to Buch.de &raquo;</a></li>
+          <li class="cta-button"><a class="button" href="#">Direkt zu Buch.de &raquo;</a></li>
         </ul>
       </div>
     </div>
@@ -352,46 +355,36 @@
           <li class="title">e-bay</li>
           <li><img style="margin-left: 80px;" src="http://placehold.it/450x350"></li>
           <li class="price">99.99€</li>
-          <li class="cta-button"><a class="button" href="#">Take me to ebay &raquo;</a></li>
+          <li class="cta-button"><a class="button" href="#">Direkt zu ebay &raquo;</a></li>
         </ul>
       </div>
     </div>
     <a class="close-reveal-modal">&#215;</a>
   </div>
 
-  <div id="edit-user-modal" class="reveal-modal large">
-    <h3>Profile</h3>
+  <div id="rate-providers-modal" class="reveal-modal small">
+    <h3>Bewerte unsere Zulieferer</h3>
+    <hr>
     <div class="row">
-      <div class="eight columns">
-        <div class="row">
-          <div class="ten columns">
-            <input type="text" placeholder="E-Mail" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="ten columns">
-            <input type="password" placeholder="Current Password" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="ten columns">
-            <input type="password" placeholder="New Password" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="ten columns">
-            <input type="password" placeholder="Confirm new Password" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="ten columns">
-            <a class="button expand" href="#">Change profile information</a>
-          </div>
-        </div>
+      <div class="three columns">
+        <img style="margin-top:18px;" src="/images/ebay_logo.png">
       </div>
-      <div class="four columns">
-        <p>Lorem ipsum ad qui amet dolore, vitae cetero quaerendum mel ea. Facilis fastidii duo no. Viris partiendo ius no, alia animal nam at. Feugait imperdiet ius an, no quis facer lucilius vis. Aliquam saperet contentiones ex pro.</p>
+      <div class="three columns">
+        <a href="#" style="margin-top:10px;" class="button extend">Open</a>
+      </div>
+      <div class="six columns">
+        <table cellpadding="0" cellspacing="0" width="133" bgcolor=#><tr><td><iframe src="http://www.ratingcode.com/show.php?id=136199479948&st=3&bg=" border="0" width="115" height="37" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" bgcolor=></iframe></td><td width="18" align="center" valign="top" style="padding-top:5px"><a href="http://www.ratingcode.com" target="_blank"><img src="http://www.ratingcode.com/images/info.png" border="0" alt="Free Rating Code" title="Free Rating Code"></a></td></tr></table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="three columns">
+        <img style="margin-top:17px;" src="/images/buch_de_logo.png">
+      </div>
+      <div class="three columns">
+        <a href="#" style="margin-top:10px;" class="button extend">Open</a>
+      </div>
+      <div class="six columns">
+        <table cellpadding="0" cellspacing="0" width="133" bgcolor=#><tr><td><iframe src="http://www.ratingcode.com/show.php?id=136199479948&st=3&bg=" border="0" width="115" height="37" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" bgcolor=></iframe></td><td width="18" align="center" valign="top" style="padding-top:5px"><a href="http://www.ratingcode.com" target="_blank"><img src="http://www.ratingcode.com/images/info.png" border="0" alt="Free Rating Code" title="Free Rating Code"></a></td></tr></table>
       </div>
     </div>
     <a class="close-reveal-modal">&#215;</a>
