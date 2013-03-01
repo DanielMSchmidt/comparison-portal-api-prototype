@@ -64,7 +64,7 @@ class ApiController < ApplicationController
   end
 
   def get_providers
-    render json: '[{"ebay": "active"},{"buecher.de": "inactive"}]', status: :accepted
+    render json: '[{"ebay": {"activity" : "active","url" : "www.ebay.de"}},{"Buch.de": {"activity" : "inactive","url" : "www.buch.de"}}]', status: :accepted
   end
 
   def post_providers

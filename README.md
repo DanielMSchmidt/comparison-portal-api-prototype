@@ -30,6 +30,26 @@ or
       "text": "Per Anhalter durch die Galaxis! DVD"
     }
 
+or more advanced (price doesn't need to have "from" or "to")
+
+    [
+      {
+        "text": "Per Anhalter durch die Galaxis!"
+      },
+      {
+        "author": "Garth Jennings"
+      },
+      {
+        "category": "DVD"
+      },
+      {
+        "price": {
+          "from": 0,
+          "to": 40
+        }
+      }
+    ]
+
 And you will get the item back like this:
 
     {
@@ -45,6 +65,11 @@ And you will get the item back like this:
           "provider": "buecher.de",
           "price": "13.7"
         }
+      ],
+      "desc": "Lorem ipsum...",
+      "images": [
+        "image_1": "www.placehold.it/test1.png",
+        "image_2": "www.placehold.it/test2.png"
       ]
     }
 
@@ -126,6 +151,8 @@ And you will get the item back like this:
 
     and you will get a 202 status code if the user was found. If it wasn't found (e.g. 2 parallel requests for the same user) you will get a 410 status code
 
+
+**** NOTE: Please note, that the articles are returned as shown in the root route ****
 
 /carts
 ------
@@ -306,10 +333,16 @@ And you will get the item back like this:
 
          [
            {
-             "ebay": "active"
+             "ebay": {
+               "activity" : "active",
+               "url" : "www.ebay.de"
+             }
            },
            {
-             "buecher.de": "inactive"
+             "Buch.de": {
+               "activity" : "inactive",
+               "url" : "www.buch.de"
+             }
            }
          ]
 
