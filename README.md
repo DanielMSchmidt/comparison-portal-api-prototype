@@ -15,7 +15,7 @@ All routes should be understood as RESTful routes & your response is allways in 
 
 Additionally you will get meaningful [http status codes](http://suso.suso.org/docs/infosheets/HTTP_status_codes.gif) back! Errors will be rendered in JSON.
 
-/
+/api
 -----
 
 The root is for searching and it only takes GET-Requests. The pattern is like this:
@@ -73,7 +73,7 @@ And you will get the item back like this:
       ]
     }
 
-/users
+/api/users
 ------
 
   - GET
@@ -154,7 +154,7 @@ And you will get the item back like this:
 
 **** NOTE: Please note, that the articles are returned as shown in the root route ****
 
-/carts
+/api/carts
 ------
 
   - GET
@@ -314,7 +314,7 @@ And you will get the item back like this:
     and you will get a 202 status code if the cart was found. If it wasn't found you will get a 404 status code.
 
 
-/providers
+/api/providers
 ----------
 
  - GET
